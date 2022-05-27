@@ -1,0 +1,79 @@
+
+a {
+  font-family: Arial, Verdana, sans-serif;
+  font-size:  15pt;
+  text-align: inherit;
+  color: navy;
+  background-color: lightskyblue;
+  text-shadow: 1px 0px slateblue;
+  background: #fffff;
+}
+table {
+  font-family: Arial, Verdana, sans-serif;
+  font-size:  25px;
+  text-indent: 1.25 cm;
+  background-color: lightskyblue;
+  text-transform: none;
+  color: navy;
+  text-shadow: 0.5px 0px slateblue;
+  background: #fffff;
+}
+
+body {
+  background-image: url(metro.jpeg);}
+  
+label {
+  font-size: 25px;
+  font-weight: 700;
+  color: #2f4f4f;
+}
+input {
+  border: 1px solid #666;
+  background: #F0FFFF;
+  color: #696969;
+  font-size: 14px;
+}
+header {
+
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+  color: white;
+  text-shadow: 1.5px 0px lightskyblue;
+  font-size: 25px; text-transform: uppercase;
+  font-family: Arial, Verdana, sans-serif;
+}
+
+p { 
+  color: white;
+  background-color: skyblue;
+  text-shadow: 1.5px 0px lightskyblue;
+  font-size: 25px; text-transform: uppercase;
+  font-family: Arial, Verdana, sans-serif}
+
+footer {
+  position: fixed;
+  left: 0; bottom: 0;
+  padding: 10px;
+  color: white;
+  text-shadow: 1.5px 0px lightskyblue;
+  font-size: 25px; text-transform: uppercase;
+  font-family: Arial, Verdana, sans-serif;
+} 
+button, .submit {
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: lightskyblue;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  font-family: Arial, Verdana, sans-serif;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duraction: 0.4s;
+  transition-duration: 0.4s;
+}   
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19)}

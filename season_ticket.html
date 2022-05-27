@@ -1,0 +1,39 @@
+
+<!doctype html>
+	<html>
+		<head>
+			<title>Автоматизированная система продажи билетов в метро</title>
+			<meta charset = "UTF-8">
+			<link rel="stylesheet" type="text/css" href="style.css">
+		</head>
+		<body>
+			<header>
+				<p>Бронирование абонемент</p>
+			</header>
+			<main>
+				<form method="POST" action="z2.php">
+					<table>
+						<tr><td>Фамилия:</td>
+                        	<td><input type="text" name="secondname" /></td></tr>
+						<tr><td>Имя:</td>
+                        	<td><input type="text" name="firstname" /></td></tr>
+                        <tr><td>Отчество:</td>
+                        	<td><input type="text" name="patronymic" /></td></tr>
+                        	<tr><td>Электронная почта:</td>
+                        	<td><input type="text" name="mail" /></td></tr>
+                        <tr><td>Дата абонемента</td>
+                        	<td colspan="2">
+                        		<p>от: <input type="date" name="start_date"/></p>
+                        		<p>до: <input type="date" name="final_date"/></p>
+                        	</td>
+                        </tr>
+					</table>
+					<button class="button" type="submit">Бронирование</button></p>
+				</form>
+				
+			</main>
+			<footer><p>Сайт создан Давыдовой Елизаветой и Костиной Анастасией</p>
+					<a href = "index.html">Главная страница сайта</a>
+			</footer>
+		</body>
+	</html>

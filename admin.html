@@ -1,0 +1,56 @@
+<!doctype html>
+	<html>
+		<head>
+			<title>Автоматизированная система продажи билетов в метро</title>
+			<meta charset = "UTF-8">
+			<link rel="stylesheet" type="text/css" href="style.css">
+		</head>
+		<body>
+			<header>
+				<p>Вход для админов</p>
+			</header>
+			<main>
+				<article>
+					<form name="form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+     				<p><label for="user">Username:</label>
+     				<input type="text" title="Введите логин" name="user"></p>
+     				<p><label for="pass">Password:</label>
+     				<input type="password" title="Введите пароль" name="pass"></p>
+     				<p><input type="submit" name="Submit" value="Login"></p>
+					</form>
+				</article>	
+
+			<
+			</main>
+			<footer><p>Сайт создан Давыдовой Елизаветой и Костиной Анастасией</p>
+					<a href = "index.html">Главная страница сайта</a>
+			</footer>
+		</body>
+	</html>
+
+<?php
+// желаемый логин  пароль
+$username = "admin";
+$password = "8888";
+if ($_POST['user'] != $username || $_POST['pass'] != $password) {
+
+}
+else {
+header('Content-Type: text/html; charset=utf-8');
+				$link = mysqli_connect("localhost", "root", "root", "program");
+				$selectedTable = 'client';
+							// Проверьте подключение
+							if($link === false){
+							    die("ERROR: Нет подключения. " . mysqli_connect_error());
+							}
+
+							$sql_select = "SELECT * FROM $selectedTable";
+							if ($result = mysqli_query($link , $sql_select)) {
+							while ($row = mysqli_fetch_array($result)){
+								printf("<p>Пользователь: " .$row['secondname'] . " " .$row['firstname'] ." " .$row['patronymic'] . " </p> 
+								<p><i>Контактные данные</i></p><p>E-mail: " .$row['mail'] . "</p><p>Дата: " .$row['datet'] . "</p>---------<br/>"
+								);
+							}}
+							
+?>
+
